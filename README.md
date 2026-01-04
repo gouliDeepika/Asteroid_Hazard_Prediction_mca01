@@ -183,3 +183,43 @@ This project demonstrates:
 4 Explainable AI (XAI)
 
 5 Full-stack development skills
+
+
+Dataset Imbalance Handling
+
+The asteroid dataset used in this project contains 90,836 records and is naturally imbalanced.
+This means the number of non-hazardous asteroids is much higher than hazardous asteroids.
+
+This imbalance is expected in real-world data because most asteroids do not pose a threat to Earth, and only a small percentage are classified as hazardous.
+
+Why This Is Acceptable
+
+The dataset reflects real asteroid distribution
+
+Imbalanced data is common in real-world machine learning problems
+
+It makes the project more realistic and practical
+
+How Imbalance Is Handled
+
+Instead of relying only on accuracy (which can be misleading for imbalanced data), this project uses:
+
+Confusion Matrix
+
+Precision
+
+Recall
+
+F1-score
+
+Special importance is given to Recall for the Hazardous class, as identifying hazardous asteroids is critical.
+
+Model-Level Solution
+
+To handle class imbalance effectively, class-weighted machine learning models are used.
+This ensures that the model pays more attention to the minority (hazardous) class during training.
+
+Conclusion
+
+The imbalanced nature of the dataset does not negatively affect the project.
+Proper evaluation metrics and imbalance-handling techniques ensure that the model performs reliably in predicting hazardous asteroids.
