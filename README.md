@@ -185,6 +185,9 @@ This project demonstrates:
 5 Full-stack development skills
 
 
+(UPDATING FEATURES) (04/01/2026)
+
+
 Dataset Imbalance Handling
 
 The asteroid dataset used in this project contains 90,836 records and is naturally imbalanced.
@@ -223,3 +226,86 @@ Conclusion
 
 The imbalanced nature of the dataset does not negatively affect the project.
 Proper evaluation metrics and imbalance-handling techniques ensure that the model performs reliably in predicting hazardous asteroids.
+
+
+(UPDATING FEATURES) (05/01/2026)
+
+
+Daily Progress & Model Improvement
+
+This project is actively maintained with daily commits as part of continuous learning and improvement.
+
+Dataset Imbalance Handling
+
+The asteroid dataset used in this project is imbalanced, where hazardous asteroids form a minority class.
+
+~90% → Non-Hazardous
+
+~10% → Hazardous
+
+Due to this imbalance, relying only on accuracy can be misleading.
+
+Initial Results
+
+In the initial experiments:
+
+Models achieved ~91% accuracy
+
+However, predictions were biased toward Non-Hazardous asteroids
+
+Several hazardous asteroids were missed
+
+Missing a hazardous asteroid is critical in real-world applications.
+
+Applied Improvements
+
+To make the model safer and more reliable, the following techniques were applied:
+
+1 Class Weight Balancing
+
+Class imbalance was handled using:
+
+class_weight = "balanced"
+
+
+This forces the model to give higher importance to hazardous asteroids.
+
+2 Hyperparameter Tuning
+
+Model parameters such as:
+
+tree depth
+
+number of estimators
+
+regularization strength
+
+were tuned to improve both accuracy and recall.
+
+3 Ensemble Learning
+
+Advanced ensemble models were used:
+
+Random Forest
+
+XGBoost
+
+These models reduce bias and improve generalization on imbalanced data.
+
+Accuracy vs Recall Trade-off
+
+After applying class balancing:
+
+Accuracy initially dropped to ~79%
+
+Recall and F1-score improved significantly
+
+Hazardous asteroid detection became more reliable
+
+After tuning:
+
+Accuracy improved again to ~88–91%
+
+While maintaining better hazardous detection
+
+✅ In safety-critical systems, recall is more important than raw accuracy.
