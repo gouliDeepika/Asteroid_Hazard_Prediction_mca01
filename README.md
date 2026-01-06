@@ -19,13 +19,13 @@ Objectives:-
 
 2 Display prediction probability using a visual gauge
 
-3 Explain predictions using:
+Explain predictions using:
 
-4 Feature Importance (global)
+1 Feature Importance (global)
 
-5 SHAP Explainability (local)
+2 SHAP Explainability (local)
 
-6 Provide an interactive and user-friendly dashboard
+Provide an interactive and user-friendly dashboard for both normal users and experts
 
  Key Features:-
 
